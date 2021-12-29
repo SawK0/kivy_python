@@ -52,6 +52,8 @@ InterfaceName:
         pos: x, y  # "100dp", "100dp"
         color: r, g, b, a 
 
+you can use width: "40dp", height: "40dp" separately instead of size property.
+
 Example -        
 <MainWidget>:
     Button:
@@ -65,3 +67,12 @@ Example -
         size: "100dp", "80dp"
         pos: "200dp", "200dp"
         color: 1, 0, 0, 1
+
+
+
+## BoxLayout 
+Use the entire space of window
+need to import BoxLayout, Button
+change orientation - vertical or horizontal
+BoxLayout ignore manual set width, height, and position. That's size and pos properties do not work 
+but, you can use size_hint and pos_hint instead
